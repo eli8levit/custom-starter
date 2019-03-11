@@ -1,0 +1,17 @@
+{
+  "StarterName": {
+    "type": "input",
+    "name": "name",
+    "message": "Type a name of the starter"
+  },
+  "StarterUrl": {
+    "type": "input",
+    "name": "url",
+    "message": "Insert starter git repo URL"
+  },
+  "AddFirstStarter": {
+    "type": "confirm",
+    "name": "addFirstStarter",
+    "message": "Seems that you don't have a starter yet. Maybe it's time to create one?"
+  }
+}
