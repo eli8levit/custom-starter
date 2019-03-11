@@ -13,5 +13,15 @@
     "type": "confirm",
     "name": "addFirstStarter",
     "message": "Seems that you don't have a starter yet. Maybe it's time to create one?"
+  },
+  "SelectStarter": {
+    "type": "list",
+    "name": "selectedStarter",
+    "message": "Select a starter you want to clone"
+  },
+  "RemoveStarter": {
+    "type": "checkbox",
+    "name": "listToRemove",
+    "message": "Select starters you want to remove"
   }
 }

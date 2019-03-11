@@ -1,7 +1,7 @@
-const { spawn, exec } = require('child_process');
 const fs = require('fs-extra');
 const Configstore = require('configstore');
 const inquirer = require('inquirer');
+const execa = require('execa');
 const chalk = require('chalk');
 const add = require('./add');
 const { QUESTIONS, spinner } = require('../utils');
@@ -16,40 +16,34 @@ async function clone() {
     const starterUrl = await selectStarter();
     const args = ['clone', '--depth', '1', starterUrl];
     spinner.start('Cloning a starter...');
-    spawn('git', [...args, pathToFolder]).on('close', async code => {
-      if (code === 0) {
-        const ifInstallPackages = fs.existsSync(`${pathToFolder}/package.json`);
-        fs.removeSync(pathToFolder + '/.git');
-        fs.moveSync(`${pathToFolder}/.`, currentPath);
-        spinner.succeed('Starter cloned');
-        fs.removeSync(pathToFolder);
-        if (ifInstallPackages) {
+    await execa('git', [...args, pathToFolder]);
+    const installPackages = await fs.existsSync(`${pathToFolder}/package.json`);
+    await fs.removeSync(pathToFolder + '/.git');
+    spinner.succeed('Starter cloned');
+    if (installPackages) {
+      await fs.removeSync(currentPath + '/package.json');
+    }
+    await fs.moveSync(`${pathToFolder}/.`, currentPath);
+    const promises = [fs.remove(pathToFolder)];
+    await fs.removeSync(pathToFolder);
+    if (installPackages) {
+      const intallPackages = new Promise(async (resolve, reject) => {
+        try {
           spinner.start('Installing packages...');
-          exec('npm install', err => {
-            if (err) {
-              throw err;
-            }
-            spinner.succeed('Packages installed');
-            console.log(chalk.green('starter complete'));
-          });
+          await execa('npm', ['install']);
+          spinner.succeed('Packages installed');
+          resolve();
+        } catch (err) {
+          reject(err);
         }
-      }
-    });
+      });
+      promises.push(intallPackages);
+    }
+    await Promise.all(promises).then(() => console.log(chalk.green('starter complete')));
   } catch (err) {
-    console.log(err);
     spinner.fail('Failed to clone');
+    process.exit(1);
   }
-}
-
-function install() {
-  return new Promise((res, rej) => {
-    spawn('npm', ['install']).on('close', code => {
-      if (code === 0) {
-        res();
-      }
-      rej();
-    });
-  });
 }
 
 async function selectStarter() {
