@@ -2,7 +2,7 @@
 'use strict';
 
 const program = require('commander');
-const { start, add, list, remove } = require('./commands');
+const { start, add, list, remove } = require('../lib/commands');
 
 program.version('0.0.1');
 
