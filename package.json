@@ -1,7 +1,7 @@
 {
-  "name": "copier",
+  "name": "custom-starter",
   "version": "1.0.0",
-  "description": "Copier can copy and install your common config files from the GitHub repo",
+  "description": "Start you projects fast simply cloning already created boilerplate repos",
   "repository": {
     "type": "git",
     "url": "https://github.com/jediyozh/custom-starter"
@@ -22,6 +22,7 @@
     "chalk": "^2.4.2",
     "commander": "^2.19.0",
     "configstore": "^4.0.0",
+    "execa": "^1.0.0",
     "fs-extra": "^7.0.1",
     "inquirer": "^6.2.2",
     "ora": "^3.1.0"
