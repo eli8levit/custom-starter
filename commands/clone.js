@@ -1,3 +1,5 @@
+'use strict';
+
 const fs = require('fs-extra');
 const Configstore = require('configstore');
 const inquirer = require('inquirer');

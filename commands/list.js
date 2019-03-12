@@ -1,3 +1,5 @@
+'use strict';
+
 const Configstore = require('configstore');
 const chalk = require('chalk');
 
