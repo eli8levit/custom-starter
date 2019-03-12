@@ -2,7 +2,6 @@ const fs = require('fs-extra');
 const Configstore = require('configstore');
 const inquirer = require('inquirer');
 const execa = require('execa');
-const chalk = require('chalk');
 const add = require('./add');
 const { QUESTIONS, spinner } = require('../utils');
 
@@ -39,7 +38,10 @@ async function clone() {
       });
       promises.push(intallPackages);
     }
-    await Promise.all(promises).then(() => console.log(chalk.green('starter complete')));
+    await Promise.all(promises).then(() => {
+      console.log();
+      console.log('👌', ' Starter cloned');
+    });
   } catch (err) {
     spinner.fail('Failed to clone');
     process.exit(1);

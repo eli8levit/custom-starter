@@ -1,6 +1,6 @@
 module.exports = {
   add: require('./add'),
-  clone: require('./clone'),
+  start: require('./clone'),
   list: require('./list'),
   remove: require('./remove'),
 };
