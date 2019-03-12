@@ -4,10 +4,13 @@
   "description": "Copier can copy and install your common config files from the GitHub repo",
   "repository": {
     "type": "git",
-    "url": "https://github.com/npm/cli.git"
+    "url": "https://github.com/jediyozh/custom-starter"
   },
   "license": "MIT",
-  "author": "Eli Levit",
+  "author": {
+    "name": "Eli Levit",
+    "email": "jediyozh@gmail.com"
+  },
   "main": "bin/index.js",
   "bin": {
     "scriber": "bin/index.js"
