@@ -13,7 +13,7 @@
   },
   "main": "bin/index.js",
   "bin": {
-    "scriber": "bin/index.js"
+    "custom-starter": "bin/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
