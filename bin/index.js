@@ -7,23 +7,23 @@ const { start, add, list, remove } = require('../lib/commands');
 program.version('0.0.1');
 
 program
-  .command('start')
-  .description('Clones a starter')
+  .command('start [name]')
+  .description('Clones a starter. Name is optional')
   .action(start);
 
 program
   .command('add')
-  .description('Adds a starter')
+  .description('Add a new starter')
   .action(add);
 
 program
   .command('list')
-  .description('Prints starter list')
+  .description('Print starter list')
   .action(list);
 
 program
   .command('remove')
-  .description('Removes starter')
+  .description('Remove a starter')
   .action(remove);
 
 program.parse(process.argv);
