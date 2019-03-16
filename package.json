@@ -16,7 +16,8 @@
     "custom-starter": "bin/index.js"
   },
   "scripts": {
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "test": "jest"
   },
   "lint-staged": {
     "linters": {
@@ -37,6 +38,8 @@
     "ora": "^3.1.0"
   },
   "devDependencies": {
+    "concat-stream": "^2.0.0",
+    "jest": "^24.5.0",
     "lint-staged": "^8.1.5",
     "prettier": "^1.16.4"
   }
