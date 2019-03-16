@@ -2,14 +2,14 @@
 'use strict';
 
 const program = require('commander');
-const { start, add, list, remove } = require('../lib/commands');
+const { use, add, list, remove } = require('../lib/commands');
 
 program.version('0.0.1');
 
 program
-  .command('start [name]')
-  .description('Clones a starter. Name is optional')
-  .action(start);
+  .command('use [name]')
+  .description('Use a starter, name is optional')
+  .action(use);
 
 program
   .command('add')
@@ -18,7 +18,7 @@ program
 
 program
   .command('list')
-  .description('Print starter list')
+  .description('Print starters list')
   .action(list);
 
 program
