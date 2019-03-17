@@ -8,7 +8,7 @@ In each project you start you need to create and install same files and modules 
 
 ## This solution
 
-You create boilerplate repo with files and packages that aren’t being changed. Next you save a starter simple writing `custom-starter add` and you use it next time you start some project. It clones all files to the current project and **installs all packages if `package.json` exists**. You can add as many boilerplate repos as you want.
+You create boilerplate repo (on GitHub, Bitbucket, GitLab, your own...whatever you want!) with files and packages that aren’t being changed. Next you save a starter simple writing `custom-starter add` providing a name and url to the repo. Use it next time you start some project. It clones all files to the current project and **installs all packages if `package.json` exists**. You can add as many boilerplate repos as you want.
 
 ## Installation
 
