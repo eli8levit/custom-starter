@@ -2,6 +2,8 @@
 
 <p align="center">🚀 Start your projects fast simply using already created boilerplate repos</p>
 
+[![Build Status](https://travis-ci.org/jediyozh/custom-starter.svg?branch=master)](https://travis-ci.org/jediyozh/custom-starter)
+
 ## The problem
 
 In each project you start you need to create and install same files and modules as were in the previous one: configs, linters, dev packages. Maybe you have some saved gists so you go and copy them each time into new projects. It’s tiring and slow…
