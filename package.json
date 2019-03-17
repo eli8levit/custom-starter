@@ -1,6 +1,6 @@
 {
   "name": "custom-starter",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Start your projects fast simply using already created boilerplate repos",
   "repository": {
     "type": "git",
@@ -17,7 +17,8 @@
   },
   "scripts": {
     "precommit": "lint-staged",
-    "test": "jest"
+    "test": "jest",
+    "semantic-release": "semantic-release"
   },
   "lint-staged": {
     "linters": {
@@ -41,6 +42,7 @@
     "concat-stream": "^2.0.0",
     "jest": "^24.5.0",
     "lint-staged": "^8.1.5",
-    "prettier": "^1.16.4"
+    "prettier": "^1.16.4",
+    "semantic-release": "^15.13.3"
   }
 }
