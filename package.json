@@ -1,7 +1,7 @@
 {
   "name": "custom-starter",
   "version": "1.0.0",
-  "description": "Start you projects fast simply cloning already created boilerplate repos",
+  "description": "Start your projects fast simply using already created boilerplate repos",
   "repository": {
     "type": "git",
     "url": "https://github.com/jediyozh/custom-starter"
