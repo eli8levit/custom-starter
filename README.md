@@ -1,6 +1,7 @@
-<h1 align="center">custom-starter</h1>
-
-<p align="center">🚀 Start your projects fast simply using already created boilerplate repos</p>
+<div align="center">
+  <h1>custom-starter</h1>
+  <p>🚀 Start your projects fast simply using already created boilerplate repos</p>
+</div>
 
 [![Build Status](https://travis-ci.org/jediyozh/custom-starter.svg?branch=master)](https://travis-ci.org/jediyozh/custom-starter)
 
