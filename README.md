@@ -19,7 +19,7 @@ You create boilerplate repo (on GitHub, Bitbucket, GitLab, your own...whatever y
 
 ## Usage
 
-`custom starter --help`
+`custom-starter --help`
 
 ```
 Usage: custom-starter [options] [command]
