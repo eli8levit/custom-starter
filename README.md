@@ -1,6 +1,7 @@
 <div align="center">
   <h1>custom-starter</h1>
   <p>🚀 Start your projects fast simply using already created boilerplate repos</p>
+  <img src="https://user-images.githubusercontent.com/31045769/54870614-9b34f500-4db1-11e9-909b-6ede36a88ef9.gif" height="367" width="643" alt="Custom starter demo">
 </div>
 
 [![Build Status](https://travis-ci.org/jediyozh/custom-starter.svg?branch=master)](https://travis-ci.org/jediyozh/custom-starter)
@@ -19,21 +20,7 @@ You create boilerplate repo (on GitHub, Bitbucket, GitLab, your own...whatever y
 
 ## Usage
 
-`custom-starter --help`
-
-```
-Usage: custom-starter [options] [command]
-
-Options:
-  -V, --version  output the version number
-  -h, --help     output usage information
-
-Commands:
-  use [name]     Use a starter, name is optional
-  add            Add a new starter
-  list           Print starters list
-  remove         Remove a starter
-```
+![usage](https://user-images.githubusercontent.com/31045769/54871235-ab50d280-4db9-11e9-9d23-dc5e909781dd.png)
 
 ## LICENSE
 
