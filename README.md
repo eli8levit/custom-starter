@@ -1,7 +1,7 @@
 <div align="center">
   <h1>custom-starter</h1>
   <p>🚀 Start your projects fast simply using already created boilerplate repos</p>
-  <img src="https://user-images.githubusercontent.com/31045769/54871564-acd0c980-4dbe-11e9-9377-a31d7d1747a0.gif" height="367" width="643" alt="Custom starter demo">
+  <img src="https://user-images.githubusercontent.com/31045769/54871564-acd0c980-4dbe-11e9-9377-a31d7d1747a0.gif" width="643" alt="Custom starter demo">
 </div>
 <br/>
 
